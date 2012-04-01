@@ -15,9 +15,9 @@ Download, fork, clone, or use it as a submodule within your .vim directory.
 Markdown Preview requires the following:
 
 - Vim version 7.0 or above with Ruby support
-- Discount for converting markdown to html and it's available in your path
+- Multimarkdown for converting markdown to html and it's available in your path
 
-The easiest way to get Discount is `brew install discount` if your rocking homebrew. If not, see the installation instructions from [David Parson's Discount repository](https://github.com/Orc/discount)
+The easiest way to get multimarkdown is `brew install multimarkdown` if your rocking homebrew.
 
 While not a requirement, default directories are tailored to work within a bundle directory as specified by the pathogen plugin.
 

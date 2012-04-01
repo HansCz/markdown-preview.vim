@@ -38,7 +38,7 @@ let g:loaded_markdownpreview = 1
 
 " Scoot if the executable isn't installed
 " if !executable('redcarpet')
-if !executable('markdown')
+if !executable('multimarkdown')
   finish
 endif
 
@@ -200,7 +200,7 @@ function! MarkdownPreview()
 
   let l:tmp_file = g:MarkdownPreviewTMP . l:file_name . '.html'
   let l:tmp_exists = filereadable(l:tmp_file)
-  let l:converted = system('markdown -f +autolink '.l:file_with_extension)
+  let l:converted = system('multimarkdown '.l:file_with_extension)
 
   call WriteFileWithRuby(l:converted, l:tmp_file, l:file_name.'.'.l:file_extension)
   " call WriteFileWithRuby(l:file_with_extension, l:tmp_file, l:file_name.'.'.l:file_extension)
